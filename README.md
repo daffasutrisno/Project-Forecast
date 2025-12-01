@@ -7,18 +7,22 @@ Sistem forecasting traffic untuk Indonesia dengan fokus pada wilayah Jawa, Bali,
 ## Cara Menjalankan Program
 
 ### 1. Install Dependencies
+
 ```bash
 pip install pandas numpy openpyxl statsmodels matplotlib seaborn python-pptx
 ```
 
 ### 2. Jalankan Forecasting Lengkap
+
 ```bash
 cd forecast_programs
 python run_all_forecasts.py
 ```
-*Estimasi waktu: 80-90 menit (termasuk 119 kabupaten)*
+
+_Estimasi waktu: 80-90 menit (termasuk 119 kabupaten)_
 
 ### 3. Jalankan Program Individual (Opsional)
+
 ```bash
 # Forecast total Indonesia saja (2 menit)
 python forecast_01_main_total.py
@@ -34,6 +38,7 @@ python analysis_01_top10_absolute.py
 ```
 
 ### 4. Generate PowerPoint Presentation
+
 ```bash
 # Presentasi lengkap (139 slides)
 python generate_ppt_complete.py
@@ -57,12 +62,12 @@ forecast_results/
 └── 05_analysis/       → Top 10 kabupaten (absolute & growth)
 ```
 
-| Level | Jumlah | MAPE | Growth 2024→2025 |
-|-------|--------|------|------------------|
-| Total Indonesia | 1 | ~12-15% | ~18-22% |
-| Regional | 3 | ~15-18% | ~20-25% |
-| Provinsi | 6 | ~18-22% | ~15-30% |
-| Kabupaten | 119 | ~20-30% | Varies |
+| Level           | Jumlah | MAPE    | Growth 2024→2025 |
+| --------------- | ------ | ------- | ---------------- |
+| Total Indonesia | 1      | ~12-15% | ~18-22%          |
+| Regional        | 3      | ~15-18% | ~20-25%          |
+| Provinsi        | 6      | ~18-22% | ~15-30%          |
+| Kabupaten       | 119    | ~20-30% | Varies           |
 
 **Event Besar:** Lebaran 2025 (Maret) & 2026 (Februari) → +40-50% traffic spike
 
